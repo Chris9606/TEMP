@@ -1,0 +1,60 @@
+#+TITLE: Emacs worksheet
+#+AUTHOR: Kristiyan Dimitrov
+#+EMAIL: dimitr14@uni.coventry.ac.uk
+#+DATE: [2017-12-05 Tue]
+#+Startup: showeverything
+** What is this module about?
+It is about learning about open-source developement and how to contribute to Mozilla.
+
+** Coursework
+The coursework is to find a big in morzila and fix it. The proccess of doing so as well.
+
+| Hyperlink                    | Description |
+|------------------------------+-------------|
+| [www.google.com][web search] | Google      |
+| [www.youtube.com][videos]    | YouTube     |
+
+[[file:cool_img.jpg]]
+
+#+BEGIN_SRC python :exports both :results output
+for i in range (0, 10):
+    print("*"*i)
+print ("Stairway to Heaven (music)")
+#+END_SRC
+
+#+RESULTS:
+
+#+BEGIN_SRC ditaa :file cyclic_buffer.png
+
+/------\      /-------\
+| Read |      | Write |
+\------/      \-------/
+   |-->           |-->
+   v              v
+/---------------------------------------\
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+\---------------------------------------/
+       Looping ------------------\
+                                 |
+               <-----------------/
+             Cyclic Buffer
+
+#+end_src
+#+RESULTS:
+
+#+BEGIN_SRC ditaa :file stairway_to_heaven.png
+/-------\            /-----------\
+| Write | <--------->|  Increment|  
+\-------/            \-----------/
+    |                      |
+    |                      |
+    v                      |
+/---------\          /------------\       /--------\
+|  "*" *i |--------->| Range Check|------>|Stairway|
+\---------/          \------------/       \--------/
+
+#+END_SRC
+#+RESULTS:
+
+
+
