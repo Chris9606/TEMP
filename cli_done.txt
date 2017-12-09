@@ -1,0 +1,118 @@
+
+ls -l
+mkdir 389
+cd 3*
+mkdir cli
+cd cli
+pwd >> text.txt
+cd ..
+ln -s txt ./389/cli/text.txt
+ln -s ./389/cli/text.txt txt
+cat txt symlink
+cat txt
+touch 389/cli/fstab.txt
+cat /etc/fstab 389/cli/fstab.txt
+cat /etc/fstab >  389/cli/fstab.txt
+cat 389/cli/fstab.txt
+nano 389/cli/fstab.txt
+grep 'reference' 389/cli/fstab.txt
+grep reference 389/cli/fstab.txt
+grep 'swap' 389/cli/fstab.txt
+grep 'reference' 389/cli/fstab.txt > 389/cli/out.txt | cat 389/cli/out.txt
+grep 'reference' 389/cli/fstab.txt > 389/cli/out.txt |& cat 389/cli/out.txt
+grep 'reference' 389/cli/fstab.txt > 389/cli/out.txt |& nano 389/cli/out.txt
+cd 389/cli
+cd ..
+touch 389/cli/myls |& echo "ls -la /" > 389/cli/myls
+cat 389/cli/myls
+chmod +x 389/cli/myls
+389/cli/myls
+389/cli/myls >> out.txt
+date:who > 389/cli/who.txt |& cat 389/cli/who.txt
+date;who
+date;who > 389/cli/who.txt |& cat 389/cli/who.txt
+ln -s cli_lnk ./389/cli
+ls
+cd 389
+cd cli
+ls
+mv cli_lnk ~/
+mv myls ~/
+ls
+cd ..
+ls
+ls cli_lnk
+ls -l cli_lnk 
+ls -l myls
+ls -l cli_lnk/
+ls -l myls
+ls -lH cli_lnk
+ls -L cli_lnk
+ls -R cli_lnk
+clear
+find ~ -name man
+cd ..
+find ./ -name man
+ls
+cd usr
+ls
+cd bin
+ls
+cd ..
+cd..
+cd ..
+ls
+cd bi
+cd bin
+ls
+cd ..
+clear
+ls
+cd home
+ls
+m389user15
+cd m389user15
+man -k 'less'
+man -k 'less' > 389/cli/less.txt |& cat 389/cli/less.txt
+man -k 'less' > 389/cli/less.txt |& nano 389/cli/less.txt
+wget http://politespider.com/images/mozilla_logo.jpg > 389/cli
+cd 389/cli
+wget http://politespider.com/images/mozilla_logo.jpg
+ls
+man cat
+cd /
+ls
+cd home
+ls
+cd m389user15
+ls
+clear
+tar -cvf 389.tar ./389 /
+ls
+mk -R 389.tar
+rm 389.tar
+ls
+ckear
+cd 389
+pwd
+cd ..
+tar -cvf 389.tar /home/m389user15/389
+tar -cvzf 389_2.tar /home/m389user15/389
+ls
+tar -tvf 389.tar
+tar -tvf 389_2.tar
+clear
+tar -cvzf 389_2.tar.gz /home/m389user15/389
+rm 389_2.tar
+mkdir 389/tmp %% tar -zxvf 389_2.tar.gz -C 389/tmp
+mkdir ./389/tmp %% tar -zxvf 389_2.tar.gz -C 389/tmp
+cd 289
+cd 389
+mkdir tmp
+cd ..
+tar -zxvf 389_2.tar.gz -C 389/tmp
+ls -LR ./389
+cat .bash_history > cli_done.txt
+ls
+cli_lnk
+nano cli_done.txt
